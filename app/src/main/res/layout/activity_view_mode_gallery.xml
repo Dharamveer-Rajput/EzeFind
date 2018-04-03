@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@color/secondtoolbarbgcolor"
+    tools:context="find.eze.ezefind.Activities.StartPackingActivity">
+
+
+    <include
+        android:id="@+id/headertoolbar"
+        layout="@layout/toolbarwithtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/secondHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/headertoolbar"
+        android:background="@color/secondtoolbarbgcolor">
+
+
+        <LinearLayout
+            android:id="@+id/linearBackbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_left_arrow_angle"/>
+
+
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/image_size5"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearViewPack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvViewPackGo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ViewPackGoPackages"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:padding="2dp"
+                android:textSize="@dimen/image_size5"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/ic_sort_down"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/image_size5"
+                android:background="@drawable/ic_filter_icon"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/greenLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondHeader"
+        android:background="@color/greenbtn">
+
+        <TextView
+            android:id="@+id/tvNameofPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/nameofplace"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/image_size5"
+            />
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:layout_below="@+id/greenLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+       >
+
+        <GridView
+            android:id="@+id/gridviewCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2">
+
+        </GridView>
+
+    </FrameLayout>
+
+</RelativeLayout>

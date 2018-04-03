@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="app_bg_color">#1980d9</color>
+
+    <color name="white">#ffffff</color>
+    <color name="piesettingblue">#000066</color>
+
+    <color name="pieReport">#ff6600</color>
+    <color name="pieViewInventory">#626262</color>
+
+    <color name="red">#FF0000</color>
+    <color name="plussign">#19C71F</color>
+    <color name="secondtoolbarbgcolor">#323232</color>
+
+    <color name="row_color_open">#152C40</color>
+    <color name="orangetext">#ff6600</color>
+    <color name="invendialogbuttoncolor">#c1c1c1</color>
+    <color name="black">#000</color>
+    <color name="greenbtn">#11d017</color>
+    <color name="gradientdarkblue">#1041b1</color>
+    <color name="gradientlightblue">#376de9</color>
+    <color name="piechartholecolor">#2f72c0</color>
+    <color name="startpackingscreencolor">#13436f</color>
+
+
+    <color name="linearleftlayoutpackgolog">#314C78</color>
+    <color name="linearrightlayoutpackgolog">#28507A</color>
+
+    <color name="transparentBlack">#CCFF0000</color>
+    <color name="transparent">#cc666666</color>
+
+
+</resources>

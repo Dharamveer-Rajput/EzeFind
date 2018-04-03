@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="find.eze.ezefind.Dialogs.FilterDialog">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/secondtoolbarbgcolor">
+
+            <TextView
+                android:id="@+id/tvFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/filter"
+                android:textSize="@dimen/image_size5"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:layout_weight="1"
+                android:padding="@dimen/image_size5">
+
+
+                <CheckBox
+                    android:id="@+id/checkboxBag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bag"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:checked="false"
+                    android:paddingLeft="5dp"
+                    android:button="@drawable/cb_selector_dialog"
+                    android:textSize="@dimen/image_size5"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkboxBin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bin"
+                    android:layout_weight="1"
+
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:checked="false"
+
+                    android:button="@drawable/cb_selector_dialog"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/image_size5"
+                    android:paddingLeft="5dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkboxBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/box"
+                    android:layout_weight="1"
+
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:checked="false"
+                    android:button="@drawable/cb_selector_dialog"
+                    android:layout_marginTop="5dp"
+
+                    android:textSize="@dimen/image_size5"
+                    android:paddingLeft="5dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkboxSingleitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/single_items"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:checked="false"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:button="@drawable/cb_selector_dialog"
+                    android:textSize="@dimen/image_size5"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="@dimen/image_size5">
+
+
+                <ImageView
+                    android:layout_width="@dimen/image_size80"
+                    android:layout_height="@dimen/image_size80"
+                    android:layout_gravity="center"
+                    android:background="@drawable/dialognewentry"/>
+
+                <ImageView
+                    android:layout_width="@dimen/image_size60"
+                    android:layout_height="@dimen/image_size60"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/dialog_refresh"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

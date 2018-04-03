@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context="find.eze.ezefind.Activities.StartPackingActivity">
+
+
+    <include
+        android:id="@+id/headertoolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_below="@+id/headertoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradientimage">
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/image_size5"
+            android:layout_marginRight="@dimen/image_size5"
+            app:cardBackgroundColor="#323232"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                >
+
+                <TextView
+                    android:id="@+id/tvPleaseEnter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pleaseenter"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/image_size10"
+                    android:textSize="@dimen/image_size15"
+                    />
+                <TextView
+                    android:id="@+id/tvInviteAccessCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inviteaccesscode"
+                    android:textColor="@color/orangetext"
+                    android:gravity="center"
+
+                    android:textSize="@dimen/image_size15"
+                    />
+                <TextView
+                    android:id="@+id/tvfromEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fromemail"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="@dimen/image_size15"
+                    />
+
+
+                <EditText
+                    android:id="@+id/edAccessCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="Code"
+                    android:textSize="13dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:layout_marginTop="@dimen/image_size5"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:singleLine="true"
+                    android:layout_marginRight="@dimen/image_size15"
+                    android:layout_marginLeft="@dimen/image_size15"
+                    android:background="@drawable/edbg_dialog"
+                    />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/roundbutton"
+                    android:text="@string/reg_screen_submit"
+                    android:textSize="@dimen/image_size8"
+                    android:layout_marginTop="@dimen/image_size10"
+                    android:layout_marginBottom="@dimen/image_size10"
+                    android:layout_marginRight="@dimen/image_size15"
+                    android:layout_marginLeft="@dimen/image_size15"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </FrameLayout>
+
+</RelativeLayout>

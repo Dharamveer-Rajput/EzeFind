@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <include
+        android:id="@+id/headertoolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_below="@+id/headertoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradientimage">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="@dimen/image_size10"
+            android:layout_marginRight="@dimen/image_size10">
+
+            <EditText
+                android:id="@+id/edUsername"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_size40"
+                android:layout_marginBottom="@dimen/image_size5"
+                android:drawableLeft="@drawable/ic_male"
+                android:hint="Username"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:background="@drawable/edbackground"
+                />
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_size40"
+                android:layout_marginBottom="@dimen/image_size5"
+                android:drawableLeft="@drawable/ic_key"
+                android:hint="Password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:background="@drawable/edbackground"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/checkboxRememberme"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Remember me"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:checked="false"
+                    android:button="@drawable/cb_selector"
+                    android:paddingLeft="4dp"
+                    />
+
+              <TextView
+                    android:id="@+id/tvForgetpsw"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Forgot Password?"
+                  android:textColor="@color/white"
+                  />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnFindme"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_size40"
+                android:layout_marginTop="@dimen/image_size5"
+                android:background="@drawable/roundbutton"
+                android:text="@string/login_screen_find_me"
+                android:textSize="@dimen/image_size10"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/tvRegsiternew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register Now"
+                    android:padding="4dp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="4dp"/>
+
+                <View
+                    android:layout_below="@+id/tvRegsiternew"
+                    android:layout_width="87dp"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_alignParentRight="true"
+
+                    android:background="@color/white" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+</RelativeLayout>

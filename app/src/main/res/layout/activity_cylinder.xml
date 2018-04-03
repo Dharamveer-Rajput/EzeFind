@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="find.eze.ezefind.Activities.PieChartHome">
+
+
+    <include
+        android:id="@+id/headertoolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_below="@+id/headertoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/gradientimage">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="350dp"
+                android:layout_alignEnd="@+id/imageViewReport"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="89dp"
+                android:background="@drawable/rectangle" />
+
+            <ImageView
+                android:id="@+id/imageViewReport"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/round" />
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

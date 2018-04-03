@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="find.eze.ezefind.Activities.RegisterActivity">
+
+
+    <include
+        android:id="@+id/headertoolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_below="@+id/headertoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradientimage">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/image_size10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginRight="@dimen/image_size10">
+
+
+
+
+            <EditText
+                android:id="@+id/edFirstname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_size40"
+                android:layout_marginBottom="@dimen/image_size5"
+                android:hint="First Name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true"
+                android:background="@drawable/edbackground"
+                />
+
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_size40"
+                android:layout_marginBottom="@dimen/image_size5"
+                android:hint="Email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:background="@drawable/edbackground"
+                />
+
+
+            <EditText
+                android:id="@+id/edPass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_size40"
+                android:layout_marginBottom="@dimen/image_size5"
+                android:hint="Password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:background="@drawable/edbackground"
+                />
+
+
+            <EditText
+                android:id="@+id/edRetypepsw"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_size40"
+                android:layout_marginBottom="@dimen/image_size5"
+                android:hint="Retype-Password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:background="@drawable/edbackground"
+                />
+
+
+            <Button
+                android:id="@+id/btnVerfiyme"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_size40"
+                android:layout_marginTop="@dimen/image_size5"
+                android:background="@drawable/roundbutton"
+                android:text="Verfiy Me"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</RelativeLayout>

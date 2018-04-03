@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="3dp">
+
+
+    <FrameLayout
+        android:layout_height="150dp"
+        android:layout_width="wrap_content"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/gridImages"
+            android:background="@drawable/bluebag"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+
+            />
+
+            <TextView
+                android:id="@+id/tvNumber"
+                android:layout_height="25dp"
+                android:layout_width="25dp"
+                android:textColor="@color/white"
+                android:padding="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/transparent"
+                android:text="45"
+                />
+
+        <RelativeLayout
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:background="@color/transparent">
+            <ImageView
+                android:id="@+id/imagePlus"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/ic_plus"
+                android:text="@string/date"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent">
+
+            <TextView
+                android:id="@+id/tvBox"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="@string/box1"
+                />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:text="@string/date"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+</RelativeLayout>

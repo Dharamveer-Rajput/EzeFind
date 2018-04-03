@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CECFD0">
+
+
+        <TextView
+            android:id="@+id/tvHeaderAlphabets"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tvHeaderCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacts"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/first"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black">
+        
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/imageLayout"
+        android:layout_below="@id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <CheckBox
+            android:id="@+id/checkboxContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:button="@drawable/selector_contact"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"/>
+
+
+        <find.eze.ezefind.Activities.SquareImageView
+            android:id="@+id/imagePerson"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/checkboxContact"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anish Lamba"
+            android:layout_margin="3dp"
+            android:maxLength="14"
+            android:ellipsize="end"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/imagePerson"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91 12344444444444"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_below="@id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/gradientdarkblue">
+
+    </View>
+
+</RelativeLayout>

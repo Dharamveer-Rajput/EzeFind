@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardView="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="find.eze.ezefind.Dialogs.DialogNewEntry">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/triangle"
+            android:layout_gravity="center"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="7dp"
+            android:elevation="10dp"
+            cardView:cardPreventCornerOverlap="false"
+            cardView:contentPadding="0dp"
+            android:layout_centerInParent="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearPack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    android:padding="5dp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/image_size50"
+                        android:layout_height="@dimen/image_size50"
+                        android:layout_gravity="center"
+                        android:background="@drawable/pack_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pack"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/image_size8"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:rotation="17"
+                    android:background="@android:color/darker_gray"
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/linearInventory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/image_size50"
+                        android:layout_height="@dimen/image_size50"
+                        android:layout_gravity="center"
+                        android:background="@drawable/inventory_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/inventory"
+                        android:layout_gravity="center"
+
+                        android:textSize="@dimen/image_size8"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</RelativeLayout>

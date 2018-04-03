@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Eze Find</string>
+
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="email_address_hint">Email Address</string>
+    <string name="reg_screen_submit">Submit</string>
+    <string name="login_screen_find_me">Find Me</string>
+    <string name="start_packing">START PACKING</string>
+    <string name="packgolog">Pack&amp;Go Log</string>
+    <string name="pack">PACK</string>
+    <string name="inventory">INVENTORY</string>
+    <string name="back"><u>Back</u></string>
+
+    <string name="nameofplace">64 Park Ave</string>
+    <string name="box1">Box 1</string>
+    <string name="date">17/03/2015</string>
+    <string name="filter">Filter</string>
+    <string name="ViewPackGoPackages">View: Pack&amp;Go Packages</string>
+
+
+    <string name="bag">Bag</string>
+    <string name="search">Search...</string>
+    <string name="invite_selected">Invite Selected</string>
+
+    <string name="invite">Invite</string>
+
+    <string name="pleaseenter">Please Enter</string>
+    <string name="inviteaccesscode">Invite Access Code</string>
+    <string name="fromemail">from email</string>
+
+
+    <string name="bin">Bin</string>
+    <string name="box">Box</string>
+    <string name="single_items">Single Items</string>
+</resources>
